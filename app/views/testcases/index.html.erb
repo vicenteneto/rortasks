@@ -1,38 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Testcases</h1>
+<div class="w3-bar w3-large w3-theme-d4">
+  <a href="#" class="w3-bar-item w3-button">
+    <i class="fa fa-bars"></i>
+  </a>
 
-<table>
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Title</th>
-      <th>Summary</th>
-      <th>Preconditions</th>
-      <th>Status</th>
-      <th>Importance</th>
-      <th>Minutes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <span class="w3-bar-item">Listing Testcases</span>
 
-  <tbody>
-    <% @testcases.each do |testcase| %>
-      <tr>
-        <td><%= testcase.code %></td>
-        <td><%= testcase.title %></td>
-        <td><%= testcase.summary %></td>
-        <td><%= testcase.preconditions %></td>
-        <td><%= testcase.status %></td>
-        <td><%= testcase.importance %></td>
-        <td><%= testcase.minutes %></td>
-        <td><%= link_to 'Show', testcase %></td>
-        <td><%= link_to 'Edit', edit_testcase_path(testcase) %></td>
-        <td><%= link_to 'Destroy', testcase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <a href="#" class="w3-bar-item w3-button w3-right">
+    <i class="fa fa-search"></i>
+  </a>
+</div>
+
+<div class="w3-container w3-content">
+  <% @testcases.each do |testcase| %>
+    <div class="w3-panel w3-white w3-card-2 w3-display-container">
+              <p><%= testcase.code %></p>
+              <p><%= testcase.title %></p>
+              <p><%= testcase.summary %></p>
+              <p><%= testcase.preconditions %></p>
+              <p><%= testcase.status %></p>
+              <p><%= testcase.importance %></p>
+              <p><%= testcase.minutes %></p>
+      
+      <%= link_to 'Show', testcase %>
+      <%= link_to 'Edit', edit_testcase_path(testcase) %>
+      <%= link_to 'Destroy', testcase, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
+</div>
 
 <br>
 
