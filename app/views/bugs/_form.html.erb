@@ -101,7 +101,14 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <datalist id="<%= :bug_status_list %>">
+      <option value="Open">
+      <option value="Closed">
+      <option value="On going">
+      <option value="Review">
+      <option value="Cancelled">
+    </datalist>
+    <input id="<%= :bug_status %>" list="<%= :bug_status_list %>">
   </div>
   <div class="actions">
     <%= f.submit %>

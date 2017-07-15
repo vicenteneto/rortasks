@@ -20,6 +20,16 @@
   <div class="field">
     <%%= f.label :password_confirmation %><br>
     <%%= f.password_field :password_confirmation %>
+<% elsif attribute.column_name == "status" -%>
+    <%%= f.label :<%= attribute.column_name %> %><br>
+    <datalist id="<%%= :<%= singular_table_name %>_status_list %>">
+      <option value="Open">
+      <option value="Closed">
+      <option value="On going">
+      <option value="Review">
+      <option value="Cancelled">
+    </datalist>
+    <input id="<%%= :<%= singular_table_name %>_status %>" list="<%%= :<%= singular_table_name %>_status_list %>">
 <% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
     <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>

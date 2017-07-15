@@ -33,7 +33,14 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <datalist id="<%= :campaign_status_list %>">
+      <option value="Open">
+      <option value="Closed">
+      <option value="On going">
+      <option value="Review">
+      <option value="Cancelled">
+    </datalist>
+    <input id="<%= :campaign_status %>" list="<%= :campaign_status_list %>">
   </div>
   <div class="field">
     <%= f.label :start %><br>

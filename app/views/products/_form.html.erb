@@ -37,7 +37,14 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <datalist id="<%= :product_status_list %>">
+      <option value="Open">
+      <option value="Closed">
+      <option value="On going">
+      <option value="Review">
+      <option value="Cancelled">
+    </datalist>
+    <input id="<%= :product_status %>" list="<%= :product_status_list %>">
   </div>
   <div class="field">
     <%= f.label :taxclass %><br>
