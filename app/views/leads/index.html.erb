@@ -5,26 +5,106 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Owner</th>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Company</th>
-      <th>Title</th>
-      <th>Status</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Street</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zipcode</th>
-      <th>County</th>
-      <th>Website</th>
-      <th>Numberofemployees</th>
-      <th>Annualrevenue</th>
-      <th>Source</th>
-      <th>Industry</th>
-      <th>Description</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Owner
+        </div>
+      </th>
+      <th>
+        <div>
+          Firstname
+        </div>
+      </th>
+      <th>
+        <div>
+          Lastname
+        </div>
+      </th>
+      <th>
+        <div>
+          Company
+        </div>
+      </th>
+      <th>
+        <div>
+          Title
+        </div>
+      </th>
+      <th>
+        <div>
+          Status
+        </div>
+      </th>
+      <th>
+        <div>
+          Phone
+        </div>
+      </th>
+      <th>
+        <div>
+          Email
+        </div>
+      </th>
+      <th>
+        <div>
+          Street
+        </div>
+      </th>
+      <th>
+        <div>
+          City
+        </div>
+      </th>
+      <th>
+        <div>
+          State
+        </div>
+      </th>
+      <th>
+        <div>
+          Zipcode
+        </div>
+      </th>
+      <th>
+        <div>
+          County
+        </div>
+      </th>
+      <th>
+        <div>
+          Website
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Numberofemployees
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Annualrevenue
+        </div>
+      </th>
+      <th>
+        <div>
+          Source
+        </div>
+      </th>
+      <th>
+        <div>
+          Industry
+        </div>
+      </th>
+      <th>
+        <div>
+          Description
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -32,26 +112,106 @@
   <tbody>
     <% @leads.each do |lead| %>
       <tr>
-        <td><%= lead.code %></td>
-        <td><%= lead.owner %></td>
-        <td><%= lead.firstname %></td>
-        <td><%= lead.lastname %></td>
-        <td><%= lead.company %></td>
-        <td><%= lead.title %></td>
-        <td><%= lead.status %></td>
-        <td><%= lead.phone %></td>
-        <td><%= lead.email %></td>
-        <td><%= lead.street %></td>
-        <td><%= lead.city %></td>
-        <td><%= lead.state %></td>
-        <td><%= lead.zipcode %></td>
-        <td><%= lead.county %></td>
-        <td><%= lead.website %></td>
-        <td><%= lead.numberofemployees %></td>
-        <td><%= lead.annualrevenue %></td>
-        <td><%= lead.source %></td>
-        <td><%= lead.industry %></td>
-        <td><%= lead.description %></td>
+        <td>
+          <div>
+            <%= lead.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.owner %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.firstname %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.lastname %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.company %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.title %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.status %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.phone %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.email %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.street %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.city %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.state %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.zipcode %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.county %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.website %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= lead.numberofemployees %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= lead.annualrevenue %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.source %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.industry %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= lead.description %>
+          </div>
+        </td>
         <td><%= link_to 'Show', lead %></td>
         <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
         <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>

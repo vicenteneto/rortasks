@@ -5,29 +5,121 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Product</th>
-      <th>Component</th>
-      <th>Version</th>
-      <th>Summary</th>
-      <th>Description</th>
-      <th>Hardware</th>
-      <th>Importance</th>
-      <th>Targetmilestone</th>
-      <th>Assignedto</th>
-      <th>Qacontact</th>
-      <th>Url</th>
-      <th>Whiteboard</th>
-      <th>Keywords</th>
-      <th>Tags</th>
-      <th>Dependson</th>
-      <th>Blocks</th>
-      <th>Origestimated</th>
-      <th>Hoursworked</th>
-      <th>Hoursleft</th>
-      <th>Deadline</th>
-      <th>Additionalcomments</th>
-      <th>Status</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Product
+        </div>
+      </th>
+      <th>
+        <div>
+          Component
+        </div>
+      </th>
+      <th>
+        <div>
+          Version
+        </div>
+      </th>
+      <th>
+        <div>
+          Summary
+        </div>
+      </th>
+      <th>
+        <div>
+          Description
+        </div>
+      </th>
+      <th>
+        <div>
+          Hardware
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Importance
+        </div>
+      </th>
+      <th>
+        <div>
+          Targetmilestone
+        </div>
+      </th>
+      <th>
+        <div>
+          Assignedto
+        </div>
+      </th>
+      <th>
+        <div>
+          Qacontact
+        </div>
+      </th>
+      <th>
+        <div>
+          Url
+        </div>
+      </th>
+      <th>
+        <div>
+          Whiteboard
+        </div>
+      </th>
+      <th>
+        <div>
+          Keywords
+        </div>
+      </th>
+      <th>
+        <div>
+          Tags
+        </div>
+      </th>
+      <th>
+        <div>
+          Dependson
+        </div>
+      </th>
+      <th>
+        <div>
+          Blocks
+        </div>
+      </th>
+      <th>
+        <div>
+          Origestimated
+        </div>
+      </th>
+      <th>
+        <div>
+          Hoursworked
+        </div>
+      </th>
+      <th>
+        <div>
+          Hoursleft
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Deadline
+        </div>
+      </th>
+      <th>
+        <div>
+          Additionalcomments
+        </div>
+      </th>
+      <th>
+        <div>
+          Status
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -35,29 +127,121 @@
   <tbody>
     <% @bugs.each do |bug| %>
       <tr>
-        <td><%= bug.code %></td>
-        <td><%= bug.product %></td>
-        <td><%= bug.component %></td>
-        <td><%= bug.version %></td>
-        <td><%= bug.summary %></td>
-        <td><%= bug.description %></td>
-        <td><%= bug.hardware %></td>
-        <td><%= bug.importance %></td>
-        <td><%= bug.targetmilestone %></td>
-        <td><%= bug.assignedto %></td>
-        <td><%= bug.qacontact %></td>
-        <td><%= bug.url %></td>
-        <td><%= bug.whiteboard %></td>
-        <td><%= bug.keywords %></td>
-        <td><%= bug.tags %></td>
-        <td><%= bug.dependson %></td>
-        <td><%= bug.blocks %></td>
-        <td><%= bug.origestimated %></td>
-        <td><%= bug.hoursworked %></td>
-        <td><%= bug.hoursleft %></td>
-        <td><%= bug.deadline %></td>
-        <td><%= bug.additionalcomments %></td>
-        <td><%= bug.status %></td>
+        <td>
+          <div>
+            <%= bug.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.product %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.component %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.version %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.summary %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.description %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.hardware %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= bug.importance %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.targetmilestone %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.assignedto %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.qacontact %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.url %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.whiteboard %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.keywords %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.tags %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.dependson %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.blocks %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.origestimated %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.hoursworked %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.hoursleft %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= bug.deadline %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.additionalcomments %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= bug.status %>
+          </div>
+        </td>
         <td><%= link_to 'Show', bug %></td>
         <td><%= link_to 'Edit', edit_bug_path(bug) %></td>
         <td><%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %></td>

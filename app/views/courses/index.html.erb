@@ -5,20 +5,76 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Fullname</th>
-      <th>Shortname</th>
-      <th>Courseidnumber</th>
-      <th>Summary</th>
-      <th>Format</th>
-      <th>Numberofweekstopics</th>
-      <th>Start</th>
-      <th>Hiddensections</th>
-      <th>Newsitemstoshow</th>
-      <th>Showgrades</th>
-      <th>Showactivityreports</th>
-      <th>Maxuploadsize</th>
-      <th>Defaultroles</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Fullname
+        </div>
+      </th>
+      <th>
+        <div>
+          Shortname
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Courseidnumber
+        </div>
+      </th>
+      <th>
+        <div>
+          Summary
+        </div>
+      </th>
+      <th>
+        <div>
+          Format
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Numberofweekstopics
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Start
+        </div>
+      </th>
+      <th>
+        <div>
+          Hiddensections
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Newsitemstoshow
+        </div>
+      </th>
+      <th>
+        <div>
+          Showgrades
+        </div>
+      </th>
+      <th>
+        <div>
+          Showactivityreports
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Maxuploadsize
+        </div>
+      </th>
+      <th>
+        <div>
+          Defaultroles
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,20 +82,76 @@
   <tbody>
     <% @courses.each do |course| %>
       <tr>
-        <td><%= course.code %></td>
-        <td><%= course.fullname %></td>
-        <td><%= course.shortname %></td>
-        <td><%= course.courseidnumber %></td>
-        <td><%= course.summary %></td>
-        <td><%= course.format %></td>
-        <td><%= course.numberofweekstopics %></td>
-        <td><%= course.start %></td>
-        <td><%= course.hiddensections %></td>
-        <td><%= course.newsitemstoshow %></td>
-        <td><%= course.showgrades %></td>
-        <td><%= course.showactivityreports %></td>
-        <td><%= course.maxuploadsize %></td>
-        <td><%= course.defaultroles %></td>
+        <td>
+          <div>
+            <%= course.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.fullname %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.shortname %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= course.courseidnumber %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.summary %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.format %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= course.numberofweekstopics %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= course.start %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.hiddensections %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= course.newsitemstoshow %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.showgrades %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.showactivityreports %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= course.maxuploadsize %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= course.defaultroles %>
+          </div>
+        </td>
         <td><%= link_to 'Show', course %></td>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>

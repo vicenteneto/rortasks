@@ -5,22 +5,86 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Project</th>
-      <th>Issuetype</th>
-      <th>Summary</th>
-      <th>Storypoints</th>
-      <th>Priority</th>
-      <th>Duedate</th>
-      <th>Components</th>
-      <th>Affectsversions</th>
-      <th>Fixversions</th>
-      <th>Assignee</th>
-      <th>Environment</th>
-      <th>Description</th>
-      <th>Labels</th>
-      <th>Epic</th>
-      <th>Sprint</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Project
+        </div>
+      </th>
+      <th>
+        <div>
+          Issuetype
+        </div>
+      </th>
+      <th>
+        <div>
+          Summary
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Storypoints
+        </div>
+      </th>
+      <th>
+        <div>
+          Priority
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Duedate
+        </div>
+      </th>
+      <th>
+        <div>
+          Components
+        </div>
+      </th>
+      <th>
+        <div>
+          Affectsversions
+        </div>
+      </th>
+      <th>
+        <div>
+          Fixversions
+        </div>
+      </th>
+      <th>
+        <div>
+          Assignee
+        </div>
+      </th>
+      <th>
+        <div>
+          Environment
+        </div>
+      </th>
+      <th>
+        <div>
+          Description
+        </div>
+      </th>
+      <th>
+        <div>
+          Labels
+        </div>
+      </th>
+      <th>
+        <div>
+          Epic
+        </div>
+      </th>
+      <th>
+        <div>
+          Sprint
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,22 +92,86 @@
   <tbody>
     <% @issues.each do |issue| %>
       <tr>
-        <td><%= issue.code %></td>
-        <td><%= issue.project %></td>
-        <td><%= issue.issuetype %></td>
-        <td><%= issue.summary %></td>
-        <td><%= issue.storypoints %></td>
-        <td><%= issue.priority %></td>
-        <td><%= issue.duedate %></td>
-        <td><%= issue.components %></td>
-        <td><%= issue.affectsversions %></td>
-        <td><%= issue.fixversions %></td>
-        <td><%= issue.assignee %></td>
-        <td><%= issue.environment %></td>
-        <td><%= issue.description %></td>
-        <td><%= issue.labels %></td>
-        <td><%= issue.epic %></td>
-        <td><%= issue.sprint %></td>
+        <td>
+          <div>
+            <%= issue.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.project %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.issuetype %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.summary %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= issue.storypoints %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.priority %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= issue.duedate %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.components %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.affectsversions %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.fixversions %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.assignee %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.environment %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.description %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.labels %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.epic %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= issue.sprint %>
+          </div>
+        </td>
         <td><%= link_to 'Show', issue %></td>
         <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
         <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>

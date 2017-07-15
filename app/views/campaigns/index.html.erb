@@ -5,20 +5,76 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Owner</th>
-      <th>Name</th>
-      <th>Active</th>
-      <th>Type</th>
-      <th>Status</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Expectedrevenue</th>
-      <th>Budgetedcost</th>
-      <th>Actualcost</th>
-      <th>Expectedresponse</th>
-      <th>Numsent</th>
-      <th>Parentcampaign</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Owner
+        </div>
+      </th>
+      <th>
+        <div>
+          Name
+        </div>
+      </th>
+      <th>
+        <div>
+          Active
+        </div>
+      </th>
+      <th>
+        <div>
+          Type
+        </div>
+      </th>
+      <th>
+        <div>
+          Status
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Start
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          End
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Expectedrevenue
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Budgetedcost
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Actualcost
+        </div>
+      </th>
+      <th>
+        <div>
+          Expectedresponse
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Numsent
+        </div>
+      </th>
+      <th>
+        <div>
+          Parentcampaign
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,20 +82,76 @@
   <tbody>
     <% @campaigns.each do |campaign| %>
       <tr>
-        <td><%= campaign.code %></td>
-        <td><%= campaign.owner %></td>
-        <td><%= campaign.name %></td>
-        <td><%= campaign.active %></td>
-        <td><%= campaign.type %></td>
-        <td><%= campaign.status %></td>
-        <td><%= campaign.start %></td>
-        <td><%= campaign.end %></td>
-        <td><%= campaign.expectedrevenue %></td>
-        <td><%= campaign.budgetedcost %></td>
-        <td><%= campaign.actualcost %></td>
-        <td><%= campaign.expectedresponse %></td>
-        <td><%= campaign.numsent %></td>
-        <td><%= campaign.parentcampaign %></td>
+        <td>
+          <div>
+            <%= campaign.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.owner %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.name %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.active %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.type %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.status %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.start %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.end %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.expectedrevenue %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.budgetedcost %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.actualcost %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.expectedresponse %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= campaign.numsent %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= campaign.parentcampaign %>
+          </div>
+        </td>
         <td><%= link_to 'Show', campaign %></td>
         <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
         <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>

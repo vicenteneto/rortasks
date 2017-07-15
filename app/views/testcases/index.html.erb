@@ -5,13 +5,41 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Title</th>
-      <th>Summary</th>
-      <th>Preconditions</th>
-      <th>Status</th>
-      <th>Importance</th>
-      <th>Minutes</th>
+      <th>
+        <div>
+          Code
+        </div>
+      </th>
+      <th>
+        <div>
+          Title
+        </div>
+      </th>
+      <th>
+        <div>
+          Summary
+        </div>
+      </th>
+      <th>
+        <div>
+          Preconditions
+        </div>
+      </th>
+      <th>
+        <div>
+          Status
+        </div>
+      </th>
+      <th>
+        <div>
+          Importance
+        </div>
+      </th>
+      <th>
+        <div class="w3-center">
+          Minutes
+        </div>
+      </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,13 +47,41 @@
   <tbody>
     <% @testcases.each do |testcase| %>
       <tr>
-        <td><%= testcase.code %></td>
-        <td><%= testcase.title %></td>
-        <td><%= testcase.summary %></td>
-        <td><%= testcase.preconditions %></td>
-        <td><%= testcase.status %></td>
-        <td><%= testcase.importance %></td>
-        <td><%= testcase.minutes %></td>
+        <td>
+          <div>
+            <%= testcase.code %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= testcase.title %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= testcase.summary %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= testcase.preconditions %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= testcase.status %>
+          </div>
+        </td>
+        <td>
+          <div>
+            <%= testcase.importance %>
+          </div>
+        </td>
+        <td>
+          <div class="w3-center">
+            <%= testcase.minutes %>
+          </div>
+        </td>
         <td><%= link_to 'Show', testcase %></td>
         <td><%= link_to 'Edit', edit_testcase_path(testcase) %></td>
         <td><%= link_to 'Destroy', testcase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
