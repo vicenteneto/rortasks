@@ -5,22 +5,22 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Project</th>
-      <th>Issuetype</th>
-      <th>Summary</th>
-      <th>Storypoints</th>
-      <th>Priority</th>
-      <th>Duedate</th>
-      <th>Components</th>
-      <th>Affectsversions</th>
-      <th>Fixversions</th>
-      <th>Assignee</th>
-      <th>Environment</th>
-      <th>Description</th>
-      <th>Labels</th>
-      <th>Epic</th>
-      <th>Sprint</th>
+      <th class="w3-center">Code</th>
+      <th class="w3-center">Project</th>
+      <th class="w3-center">Issuetype</th>
+      <th class="w3-center">Summary</th>
+      <th class="w3-center">Storypoints</th>
+      <th class="w3-center">Priority</th>
+      <th class="w3-center">Duedate</th>
+      <th class="w3-center">Components</th>
+      <th class="w3-center">Affectsversions</th>
+      <th class="w3-center">Fixversions</th>
+      <th class="w3-center">Assignee</th>
+      <th class="w3-center">Environment</th>
+      <th class="w3-center">Description</th>
+      <th class="w3-center">Labels</th>
+      <th class="w3-center">Epic</th>
+      <th class="w3-center">Sprint</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,22 +28,22 @@
   <tbody>
     <% @issues.each do |issue| %>
       <tr>
-        <td><%= issue.code %></td>
-        <td><%= issue.project %></td>
-        <td><%= issue.issuetype %></td>
-        <td><%= issue.summary %></td>
-        <td><%= issue.storypoints %></td>
-        <td><%= issue.priority %></td>
-        <td><%= issue.duedate %></td>
-        <td><%= issue.components %></td>
-        <td><%= issue.affectsversions %></td>
-        <td><%= issue.fixversions %></td>
-        <td><%= issue.assignee %></td>
-        <td><%= issue.environment %></td>
-        <td><%= issue.description %></td>
-        <td><%= issue.labels %></td>
-        <td><%= issue.epic %></td>
-        <td><%= issue.sprint %></td>
+        <td class="w3-center"><%= issue.code %></td>
+        <td class="w3-center"><%= issue.project %></td>
+        <td class="w3-center"><%= issue.issuetype %></td>
+        <td class="w3-center"><%= issue.summary %></td>
+        <td class="w3-center"><%= issue.storypoints %></td>
+        <td class="w3-center"><%= issue.priority %></td>
+        <td class="w3-center"><%= issue.duedate %></td>
+        <td class="w3-center"><%= issue.components %></td>
+        <td class="w3-center"><%= issue.affectsversions %></td>
+        <td class="w3-center"><%= issue.fixversions %></td>
+        <td class="w3-center"><%= issue.assignee %></td>
+        <td class="w3-center"><%= issue.environment %></td>
+        <td class="w3-center"><%= issue.description %></td>
+        <td class="w3-center"><%= issue.labels %></td>
+        <td class="w3-center"><%= issue.epic %></td>
+        <td class="w3-center"><%= issue.sprint %></td>
         <td><%= link_to 'Show', issue %></td>
         <td><%= link_to 'Edit', edit_issue_path(issue) %></td>
         <td><%= link_to 'Destroy', issue, method: :delete, data: { confirm: 'Are you sure?' } %></td>

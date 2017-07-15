@@ -5,55 +5,55 @@
 <table>
   <thead>
     <tr>
-      <th>Code</th>
-      <th>Name</th>
-      <th>Model</th>
-      <th>Sku</th>
-      <th>Weight</th>
-      <th>Manufacturer</th>
-      <th>Status</th>
-      <th>Taxclass</th>
-      <th>Urlkey</th>
-      <th>Visibility</th>
-      <th>Setproductasnewfromdate</th>
-      <th>Setproductasnewtodate</th>
-      <th>Countryofmanufacture</th>
-      <th>Price</th>
-      <th>Cost</th>
-      <th>Specialprice</th>
-      <th>Specialpricefromdate</th>
-      <th>Specialpricetodate</th>
-      <th>Applymap</th>
-      <th>Displayactualprice</th>
-      <th>Suggestedretailprice</th>
-      <th>Metatitle</th>
-      <th>Metakeywords</th>
-      <th>Metadescription</th>
-      <th>Shortdescription</th>
-      <th>Description</th>
-      <th>Indepth</th>
-      <th>Dimensions</th>
-      <th>Activationinformation</th>
-      <th>Color</th>
-      <th>Customdesign</th>
-      <th>Activefrom</th>
-      <th>Activeto</th>
-      <th>Customlayoutupdate</th>
-      <th>Displayproductoptionsin</th>
-      <th>Pagelayout</th>
-      <th>Enablerecurringprofile</th>
-      <th>Allowgiftmessage</th>
-      <th>Managestock</th>
-      <th>Qty</th>
-      <th>Qtyforitemsstatustobecomeoutofstock</th>
-      <th>Minimumqtyallowedinshoppingcart</th>
-      <th>Maximumqtyallowedinshoppingcart</th>
-      <th>Qtyusesdecimals</th>
-      <th>Backorders</th>
-      <th>Notifyforquantitybelow</th>
-      <th>Enableqtyincrements</th>
-      <th>Stockavailability</th>
-      <th>Tags</th>
+      <th class="w3-center">Code</th>
+      <th class="w3-center">Name</th>
+      <th class="w3-center">Model</th>
+      <th class="w3-center">Sku</th>
+      <th class="w3-center">Weight</th>
+      <th class="w3-center">Manufacturer</th>
+      <th class="w3-center">Status</th>
+      <th class="w3-center">Taxclass</th>
+      <th class="w3-center">Urlkey</th>
+      <th class="w3-center">Visibility</th>
+      <th class="w3-center">Setproductasnewfromdate</th>
+      <th class="w3-center">Setproductasnewtodate</th>
+      <th class="w3-center">Countryofmanufacture</th>
+      <th class="w3-center">Price</th>
+      <th class="w3-center">Cost</th>
+      <th class="w3-center">Specialprice</th>
+      <th class="w3-center">Specialpricefromdate</th>
+      <th class="w3-center">Specialpricetodate</th>
+      <th class="w3-center">Applymap</th>
+      <th class="w3-center">Displayactualprice</th>
+      <th class="w3-center">Suggestedretailprice</th>
+      <th class="w3-center">Metatitle</th>
+      <th class="w3-center">Metakeywords</th>
+      <th class="w3-center">Metadescription</th>
+      <th class="w3-center">Shortdescription</th>
+      <th class="w3-center">Description</th>
+      <th class="w3-center">Indepth</th>
+      <th class="w3-center">Dimensions</th>
+      <th class="w3-center">Activationinformation</th>
+      <th class="w3-center">Color</th>
+      <th class="w3-center">Customdesign</th>
+      <th class="w3-center">Activefrom</th>
+      <th class="w3-center">Activeto</th>
+      <th class="w3-center">Customlayoutupdate</th>
+      <th class="w3-center">Displayproductoptionsin</th>
+      <th class="w3-center">Pagelayout</th>
+      <th class="w3-center">Enablerecurringprofile</th>
+      <th class="w3-center">Allowgiftmessage</th>
+      <th class="w3-center">Managestock</th>
+      <th class="w3-center">Qty</th>
+      <th class="w3-center">Qtyforitemsstatustobecomeoutofstock</th>
+      <th class="w3-center">Minimumqtyallowedinshoppingcart</th>
+      <th class="w3-center">Maximumqtyallowedinshoppingcart</th>
+      <th class="w3-center">Qtyusesdecimals</th>
+      <th class="w3-center">Backorders</th>
+      <th class="w3-center">Notifyforquantitybelow</th>
+      <th class="w3-center">Enableqtyincrements</th>
+      <th class="w3-center">Stockavailability</th>
+      <th class="w3-center">Tags</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -61,55 +61,55 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.code %></td>
-        <td><%= product.name %></td>
-        <td><%= product.model %></td>
-        <td><%= product.sku %></td>
-        <td><%= product.weight %></td>
-        <td><%= product.manufacturer %></td>
-        <td><%= product.status %></td>
-        <td><%= product.taxclass %></td>
-        <td><%= product.urlkey %></td>
-        <td><%= product.visibility %></td>
-        <td><%= product.setproductasnewfromdate %></td>
-        <td><%= product.setproductasnewtodate %></td>
-        <td><%= product.countryofmanufacture %></td>
-        <td><%= product.price %></td>
-        <td><%= product.cost %></td>
-        <td><%= product.specialprice %></td>
-        <td><%= product.specialpricefromdate %></td>
-        <td><%= product.specialpricetodate %></td>
-        <td><%= product.applymap %></td>
-        <td><%= product.displayactualprice %></td>
-        <td><%= product.suggestedretailprice %></td>
-        <td><%= product.metatitle %></td>
-        <td><%= product.metakeywords %></td>
-        <td><%= product.metadescription %></td>
-        <td><%= product.shortdescription %></td>
-        <td><%= product.description %></td>
-        <td><%= product.indepth %></td>
-        <td><%= product.dimensions %></td>
-        <td><%= product.activationinformation %></td>
-        <td><%= product.color %></td>
-        <td><%= product.customdesign %></td>
-        <td><%= product.activefrom %></td>
-        <td><%= product.activeto %></td>
-        <td><%= product.customlayoutupdate %></td>
-        <td><%= product.displayproductoptionsin %></td>
-        <td><%= product.pagelayout %></td>
-        <td><%= product.enablerecurringprofile %></td>
-        <td><%= product.allowgiftmessage %></td>
-        <td><%= product.managestock %></td>
-        <td><%= product.qty %></td>
-        <td><%= product.qtyforitemsstatustobecomeoutofstock %></td>
-        <td><%= product.minimumqtyallowedinshoppingcart %></td>
-        <td><%= product.maximumqtyallowedinshoppingcart %></td>
-        <td><%= product.qtyusesdecimals %></td>
-        <td><%= product.backorders %></td>
-        <td><%= product.notifyforquantitybelow %></td>
-        <td><%= product.enableqtyincrements %></td>
-        <td><%= product.stockavailability %></td>
-        <td><%= product.tags %></td>
+        <td class="w3-center"><%= product.code %></td>
+        <td class="w3-center"><%= product.name %></td>
+        <td class="w3-center"><%= product.model %></td>
+        <td class="w3-center"><%= product.sku %></td>
+        <td class="w3-center"><%= product.weight %></td>
+        <td class="w3-center"><%= product.manufacturer %></td>
+        <td class="w3-center"><%= product.status %></td>
+        <td class="w3-center"><%= product.taxclass %></td>
+        <td class="w3-center"><%= product.urlkey %></td>
+        <td class="w3-center"><%= product.visibility %></td>
+        <td class="w3-center"><%= product.setproductasnewfromdate %></td>
+        <td class="w3-center"><%= product.setproductasnewtodate %></td>
+        <td class="w3-center"><%= product.countryofmanufacture %></td>
+        <td class="w3-center"><%= product.price %></td>
+        <td class="w3-center"><%= product.cost %></td>
+        <td class="w3-center"><%= product.specialprice %></td>
+        <td class="w3-center"><%= product.specialpricefromdate %></td>
+        <td class="w3-center"><%= product.specialpricetodate %></td>
+        <td class="w3-center"><%= product.applymap %></td>
+        <td class="w3-center"><%= product.displayactualprice %></td>
+        <td class="w3-center"><%= product.suggestedretailprice %></td>
+        <td class="w3-center"><%= product.metatitle %></td>
+        <td class="w3-center"><%= product.metakeywords %></td>
+        <td class="w3-center"><%= product.metadescription %></td>
+        <td class="w3-center"><%= product.shortdescription %></td>
+        <td class="w3-center"><%= product.description %></td>
+        <td class="w3-center"><%= product.indepth %></td>
+        <td class="w3-center"><%= product.dimensions %></td>
+        <td class="w3-center"><%= product.activationinformation %></td>
+        <td class="w3-center"><%= product.color %></td>
+        <td class="w3-center"><%= product.customdesign %></td>
+        <td class="w3-center"><%= product.activefrom %></td>
+        <td class="w3-center"><%= product.activeto %></td>
+        <td class="w3-center"><%= product.customlayoutupdate %></td>
+        <td class="w3-center"><%= product.displayproductoptionsin %></td>
+        <td class="w3-center"><%= product.pagelayout %></td>
+        <td class="w3-center"><%= product.enablerecurringprofile %></td>
+        <td class="w3-center"><%= product.allowgiftmessage %></td>
+        <td class="w3-center"><%= product.managestock %></td>
+        <td class="w3-center"><%= product.qty %></td>
+        <td class="w3-center"><%= product.qtyforitemsstatustobecomeoutofstock %></td>
+        <td class="w3-center"><%= product.minimumqtyallowedinshoppingcart %></td>
+        <td class="w3-center"><%= product.maximumqtyallowedinshoppingcart %></td>
+        <td class="w3-center"><%= product.qtyusesdecimals %></td>
+        <td class="w3-center"><%= product.backorders %></td>
+        <td class="w3-center"><%= product.notifyforquantitybelow %></td>
+        <td class="w3-center"><%= product.enableqtyincrements %></td>
+        <td class="w3-center"><%= product.stockavailability %></td>
+        <td class="w3-center"><%= product.tags %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
