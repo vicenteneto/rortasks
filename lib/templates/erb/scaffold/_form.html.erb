@@ -20,6 +20,9 @@
   <div class="field">
     <%%= f.label :password_confirmation %><br>
     <%%= f.password_field :password_confirmation %>
+<% elsif ["description", "summary"].include?(attribute.column_name) -%>
+    <%%= f.label :<%= attribute.column_name %> %><br>
+    <%%= f.text_area :<%= attribute.column_name %>, cols: 50, rows: <% if attribute.column_name == "summary" -%>5<% else -%>8<% end -%>%>
 <% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
     <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
